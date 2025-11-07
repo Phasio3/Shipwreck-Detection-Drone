@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipwreck Detection Interface</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body { display: flex; height: 100vh; margin: 0; font-family: sans-serif; background: #101010; color: #eee; }
+        #alerts { width: 35%; background: #181818; padding: 10px; overflow-y: auto; }
+        #alerts h2 { color: #0af; }
+        .alert-box { border: 1px solid #333; border-left: 5px solid #0f0; padding: 8px; margin-bottom: 10px; border-radius: 6px; background: #222; }
+        .alert-high { border-left-color: #f00; }
+        .alert-medium { border-left-color: #fa0; }
+        .alert-low { border-left-color: #0f0; }
+        #video { flex-grow: 1; display: flex; justify-content: center; align-items: center; background: black; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div id="alerts">
+        <h2>Incoming Alerts</h2>
+        <div id="alert-list"></div>
+    </div>
+    <div id="video">
+    <img src="/video_feed">
+    </div>
+
+    <script>
+        const socket = io();
+
+        function createAlertBox(data) {
+        const div = document.createElement('div');
+        const priority = data.priority || 'low';
+        div.className = 'alert-box alert-' + priority.toLowerCase();
+
+        div.innerHTML = `
+            <strong>Type:</strong> ${data.detection?.class || 'unknown'}<br>
+            <strong>Confidence:</strong> ${(data.detection?.confidence * 100).toFixed(1)}%<br>
+            <strong>Priority:</strong> ${priority}<br>
+            <strong>Location:</strong> ${data.detection?.latitude?.toFixed(4)}, ${data.detection?.longitude?.toFixed(4)}<br>
+            <small>${data.timestamp || ''}</small>
+        `;
+        return div;
+        }
+
+        socket.on('new_alert', data => {
+        const alertBox = createAlertBox(data);
+        const list = document.getElementById('alert-list');
+        list.prepend(alertBox);
+        });
+    </script>
+</body>
+</html>
