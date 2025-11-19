@@ -1,0 +1,66 @@
+[0.020s] Invoking command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake /home/sylvain/ros2_drones_ws/src/drone_world -DCMAKE_INSTALL_PREFIX=/home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world
+[0.097s] -- The C compiler identification is GNU 9.4.0
+[0.192s] -- The CXX compiler identification is GNU 9.4.0
+[0.203s] -- Check for working C compiler: /usr/bin/cc
+[0.323s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.324s] -- Detecting C compiler ABI info
+[0.428s] -- Detecting C compiler ABI info - done
+[0.438s] -- Detecting C compile features
+[0.438s] -- Detecting C compile features - done
+[0.442s] -- Check for working CXX compiler: /usr/bin/c++
+[0.584s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.586s] -- Detecting CXX compiler ABI info
+[0.731s] -- Detecting CXX compiler ABI info - done
+[0.741s] -- Detecting CXX compile features
+[0.742s] -- Detecting CXX compile features - done
+[0.746s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.787s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.787s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.918s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.022s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.031s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.032s] -- Configured cppcheck include dirs: 
+[1.032s] -- Configured cppcheck exclude dirs and/or files: 
+[1.043s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.043s] -- Configured cpplint exclude dirs and/or files: 
+[1.046s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.051s] -- Added test 'lint_cmake' to check CMake code style
+[1.054s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.064s] -- Added test 'uncrustify' to check C / C++ code style
+[1.064s] -- Configured uncrustify additional arguments: 
+[1.066s] -- Added test 'xmllint' to check XML markup files
+[1.069s] -- Configuring done
+[1.071s] -- Generating done
+[1.073s] -- Build files have been written to: /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world
+[1.077s] Invoked command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake /home/sylvain/ros2_drones_ws/src/drone_world -DCMAKE_INSTALL_PREFIX=/home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world
+[1.083s] Invoking command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake --build /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world -- -j8 -l8
+[1.138s] Invoked command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake --build /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world -- -j8 -l8
+[1.154s] Invoking command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake --install /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world
+[1.165s] -- Install configuration: ""
+[1.165s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/ament_index/resource_index/package_run_dependencies/drone_world
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/ament_index/resource_index/parent_prefix_path/drone_world
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/environment/ament_prefix_path.sh
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/environment/ament_prefix_path.dsv
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/environment/path.sh
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/environment/path.dsv
+[1.166s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/local_setup.bash
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/local_setup.sh
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/local_setup.zsh
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/local_setup.dsv
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/package.dsv
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/ament_index/resource_index/packages/drone_world
+[1.167s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/cmake/drone_worldConfig.cmake
+[1.168s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/cmake/drone_worldConfig-version.cmake
+[1.168s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/package.xml
+[1.168s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/launch
+[1.168s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/launch/start_world.launch.py
+[1.168s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/launch/__pycache__
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/launch/__pycache__/start_world.launch.cpython-38.pyc
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/worlds
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/worlds/flat_world.sdf.save
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/worlds/flat_world.sdf
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/models
+[1.169s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/models/simple_drone
+[1.170s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/models/simple_drone/model.sdf
+[1.170s] -- Installing: /home/sylvain/ros2_drones_ws/src/drone_world/install/drone_world/share/drone_world/models/simple_drone/model.config
+[1.172s] Invoked command in '/home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sylvain/ros2_ws/install/in426_motion:/home/sylvain/ros2_ws/install/in425_nav:/home/sylvain/ros2_ws/install/in424_nav:/opt/ros/galactic /usr/bin/cmake --install /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world

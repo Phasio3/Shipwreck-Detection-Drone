@@ -1,0 +1,9 @@
+Panels:
+  - Class: rviz_common/Displays
+Displays:
+  - Class: rviz_default_plugins/Map
+    Name: Exploration Map
+    Topic: /exploration_map
+    Alpha: 1.0
+    Color Scheme: map
+    Use Timestamp: false
