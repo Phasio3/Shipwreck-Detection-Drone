@@ -41,6 +41,35 @@
 
       <!-- Fixe le drone à Z=0.5 -->
       <gravity>false</gravity>
+      
+            <!-- Camera sensor -->
+      <sensor name="camera" type="camera">
+        <pose>0.2 0 0.1 0 0 0</pose> <!-- Position avant du drone -->
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+
+        <camera>
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <ros>
+            <namespace>/simple_drone</namespace>
+            <remapping>image:=camera/image_raw</remapping>
+            <remapping>camera_info:=camera/camera_info</remapping>
+          </ros>
+          <frameName>camera_link</frameName>
+        </plugin>
+      </sensor>
     </link>
     
     <plugin name="simple_drone_movement" filename="libgazebo_ros_planar_move.so">

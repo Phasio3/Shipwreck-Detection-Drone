@@ -1,4 +1,23 @@
+cd ~/Shipwreck-Detection-Drone/src/drone_world
+
+
+
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Shipwreck-Detection-Drone/install/drone_world/share/drone_world/models
 colcon build
+
+
 source /opt/ros/galactic/setup.bash
 ros2 launch drone_world start_world.launch.py
+
+
+source /opt/ros/galactic/setup.bash
+python3 scripts/exploration_random.py
+
+
+source /opt/ros/galactic/setup.bash
+ros2 run rviz2 rviz2
+
+
+source /opt/ros/galactic/setup.bash
+ros2 run rqt_image_view rqt_image_view
+
