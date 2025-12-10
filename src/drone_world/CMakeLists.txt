@@ -37,7 +37,6 @@ install(DIRECTORY launch rviz
 
 install(PROGRAMS
   scripts/exploration_random.py
-  scripts/exploration_mapper.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

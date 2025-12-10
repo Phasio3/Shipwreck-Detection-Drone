@@ -1,4 +1,4 @@
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros2_drones_ws/install/drone_world/share/drone_world/models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Shipwreck-Detection-Drone/install/drone_world/share/drone_world/models
 colcon build
-source install/setup.bash
+source /opt/ros/galactic/setup.bash
 ros2 launch drone_world start_world.launch.py

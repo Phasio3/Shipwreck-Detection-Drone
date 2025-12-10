@@ -1,0 +1,6 @@
+[0.054s] Invoking command in '/home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world': /usr/bin/cmake --build /home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world -- -j8 -l8
+[0.168s] CMake Error: The current CMakeCache.txt directory /home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world/CMakeCache.txt is different than the directory /home/sylvain/ros2_drones_ws/src/drone_world/build/drone_world where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.357s] CMake Error: The source directory "/home/sylvain/ros2_drones_ws/src/drone_world" does not exist.
+[0.357s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.364s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.370s] Invoked command in '/home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world' returned '2': /usr/bin/cmake --build /home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world -- -j8 -l8

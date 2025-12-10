@@ -1,0 +1,2 @@
+Invoking command in '/home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world': /usr/bin/cmake --build /home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world -- -j8 -l8
+Invoked command in '/home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world' returned '2': /usr/bin/cmake --build /home/sylvain/Shipwreck-Detection-Drone/src/drone_world/build/drone_world -- -j8 -l8
